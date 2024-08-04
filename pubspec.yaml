@@ -1,0 +1,46 @@
+name: lotto_diary
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.4 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  flutter_native_splash: ^2.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  fonts:
+    - family: PyeongChangPeaceBold
+      fonts:
+        - asset: assets/fonts/pyeongchangpeace/mac/PyeongChangPeace-Bold.otf
+    - family: PyeongChangPeaceLight
+      fonts:
+        - asset: assets/fonts/pyeongchangpeace/mac/PyeongChangPeace-Light.otf
+    - family: PretendardBold
+      fonts:
+        - asset: assets/fonts/prendard/mac/Pretendard-Bold.otf
+        - asset: assets/fonts/prendard/window/Pretendard-Bold.ttf
+    - family: PretendardLight
+      fonts:
+        - asset: assets/fonts/prendard/mac/Pretendard-Light.otf
+        - asset: assets/fonts/prendard/window/Pretendard-Light.ttf
+    - family: PretendardMedium
+      fonts:
+        - asset: assets/fonts/prendard/mac/Pretendard-Medium.otf
+        - asset: assets/fonts/prendard/window/Pretendard-Medium.ttf
+    - family: PretendardSemiBold
+      fonts:
+        - asset: assets/fonts/prendard/mac/Pretendard-SemiBold.otf
+        - asset: assets/fonts/prendard/window/Pretendard-SemiBold.ttf
