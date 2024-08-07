@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 
 class BottomBar extends StatelessWidget {
   final int currentIndex;
-  final ValueChanged<int> onTap;
+  final ValueChanged<int>? onTap;
 
-  BottomBar({required this.currentIndex, required this.onTap});
+  BottomBar({required this.currentIndex, this.onTap});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 90, // 높이 설정
+      height: kBottomNavigationBarHeight + 34,
       child: BottomNavigationBar(
         backgroundColor: Color(0xffF3F4F6),
         currentIndex: currentIndex,
@@ -32,7 +32,7 @@ class BottomBar extends StatelessWidget {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.edit),
-            label: '일기쓰기',
+            label: '일기',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.shopping_cart),
