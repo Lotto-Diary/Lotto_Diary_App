@@ -257,7 +257,7 @@ class _HomePageState extends State<HomePage> {
             child: Text(
               '©LD',
               style: TextStyle(
-                color: Colors.grey,
+                color: Color(0xFF808080),
                 fontSize: 14,
                 fontFamily: 'PretendardLight',
               ),
