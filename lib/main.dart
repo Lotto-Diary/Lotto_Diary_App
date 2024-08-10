@@ -127,7 +127,7 @@ class _MyAppState extends State<MyApp> {
             children: [
               SizedBox(width: 16),
               Text(
-                '마이페이지',
+                '마이페이지&상점',
                 style: TextStyle(
                   fontSize: 30,
                   fontFamily: 'PretendardBold',
