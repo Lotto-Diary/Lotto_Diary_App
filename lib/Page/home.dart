@@ -245,7 +245,7 @@ class _HomePageState extends State<HomePage> {
               child: Text(
                 '일기 쓰러 가기',
                 style: TextStyle(
-                  fontSize: 16,
+                  fontSize: 12,
                   color: Colors.white,
                   fontFamily: 'PretendardSemiBold',
                 ),
