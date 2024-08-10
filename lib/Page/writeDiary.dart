@@ -118,7 +118,7 @@ class _WritePageState extends State<WritePage> {
                     ),
                     SizedBox(height: 8),
                     Divider(
-                      color: Color(0xFFDADADA),  // Changed the line color here
+                      color: Color(0xFFDADADA), 
                       thickness: 1,
                     ),
                     SizedBox(height: 8),
@@ -141,7 +141,6 @@ class _WritePageState extends State<WritePage> {
               Center(
                 child: ElevatedButton(
                   onPressed: () {
-                    // Add the logic for completing the diary entry here
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Color(0xFF454FAF),
