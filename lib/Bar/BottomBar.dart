@@ -35,10 +35,6 @@ class BottomBar extends StatelessWidget {
             label: '일기',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.shopping_cart),
-            label: '상점',
-          ),
-          BottomNavigationBarItem(
             icon: Icon(Icons.person),
             label: '마이페이지',
           ),

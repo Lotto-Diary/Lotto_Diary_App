@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:lotto_diary/Page/writeDiary.dart';
 import 'Page/home.dart';
 import 'Page/myPage.dart';
-import 'Page/shop.dart';
 import 'Page/myDiary.dart';
 import 'Page/mailBoxPage.dart';
 import 'Bar/BottomBar.dart';
@@ -94,24 +94,21 @@ class _MyAppState extends State<MyApp> {
                   color: Colors.black,
                 ),
               ),
-            ],
-          ),
-          toolbarHeight: 130,
-          backgroundColor: Color(0xFFF3F4F6),
-          elevation: 0,
-          centerTitle: false,
-        );
-      case 2:
-        return AppBar(
-          title: Row(
-            children: [
-              SizedBox(width: 16),
-              Text(
-                '상점',
-                style: TextStyle(
-                  fontSize: 30,
-                  fontFamily: 'PretendardBold',
-                  color: Colors.black,
+              Spacer(),
+              Padding(
+                padding: const EdgeInsets.only(right: 16.0),
+                child: Builder(
+                  builder: (BuildContext context) {
+                    return IconButton(
+                      icon: Icon(Icons.edit, size: 35),
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => WritePage()),
+                        );
+                      },
+                    );
+                  },
                 ),
               ),
             ],
@@ -121,7 +118,7 @@ class _MyAppState extends State<MyApp> {
           elevation: 0,
           centerTitle: false,
         );
-      case 3:
+      case 2:
         return AppBar(
           title: Row(
             children: [
@@ -136,7 +133,7 @@ class _MyAppState extends State<MyApp> {
               ),
             ],
           ),
-          toolbarHeight: 130,
+          toolbarHeight:130,
           backgroundColor: Color(0xFFF3F4F6),
           elevation: 0,
           centerTitle: false,
@@ -164,8 +161,6 @@ class _MyAppState extends State<MyApp> {
       case 1:
         return MyDiaryPage();
       case 2:
-        return ShopPage();
-      case 3:
         return MyPage();
       default:
         return Center(child: Text('페이지를 찾을 수 없습니다.'));

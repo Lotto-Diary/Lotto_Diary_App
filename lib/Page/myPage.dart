@@ -10,53 +10,68 @@ class _MyPageState extends State<MyPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xFFF3F4F6),
-      appBar: AppBar(
-        backgroundColor: Color(0xFFF3F4F6),
-        elevation: 0,
-      ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16.0),
+          padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               ListTile(
                 title: Text(
                   '비밀번호 변경',
-                  style: TextStyle(fontWeight: FontWeight.w600), 
+                  style: TextStyle(
+                    fontFamily: 'PretendardMedium',
+                    fontWeight: FontWeight.w600,
+                  ),
                 ),
-                subtitle: Text('비밀번호를 변경해보세요.'),
+                subtitle: Text(
+                  '비밀번호를 변경해보세요.',
+                  style: TextStyle(
+                    fontFamily: 'PretendardLight',
+                  ),
+                ),
                 trailing: Icon(Icons.chevron_right),
-                onTap: () {
-                },
+                onTap: () {},
               ),
               ListTile(
                 title: Text(
                   '상점 기록 조회',
-                  style: TextStyle(fontWeight: FontWeight.w600), 
+                  style: TextStyle(
+                    fontFamily: 'PretendardMedium',
+                    fontWeight: FontWeight.w600,
+                  ),
                 ),
-                subtitle: Text('상점에서 산 물건들의 기록을 조회해보세요.'),
+                subtitle: Text(
+                  '상점에서 산 물건들의 기록을 조회해보세요.',
+                  style: TextStyle(
+                    fontFamily: 'PretendardLight',
+                  ),
+                ),
                 trailing: Icon(Icons.chevron_right),
-                onTap: () {
-
-                },
+                onTap: () {},
               ),
               SizedBox(height: 16),
-              Text.rich(
-                TextSpan(
+              // 보유코인 텍스트 및 숫자 수정
+              Padding(
+                padding: const EdgeInsets.only(left: 8.0), // 여백 추가
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.baseline,
+                  textBaseline: TextBaseline.alphabetic,
                   children: [
-                    TextSpan(
-                      text: '보유코인 ',
+                    Text(
+                      '보유코인 ',
                       style: TextStyle(
+                        fontFamily: 'PretendardBold',
                         fontSize: 28,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    TextSpan(
-                      text: '13',
+                    Text(
+                      '13',
                       style: TextStyle(
-                        fontSize: 18,
-                        color: Color(0xFF454FAF), 
+                        fontFamily: 'PretendardBold',
+                        fontSize: 28,
+                        color: Color(0xFF454FAF),
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -70,8 +85,17 @@ class _MyPageState extends State<MyPage> {
               _buildItem('문화생활', '문화 상품권 1만원권', '40코인', Icons.card_giftcard),
               _buildItem('올리브영', '올리브영 기프티콘 5000원권', '20코인', Icons.local_mall),
               _buildItem('올리브영', '올리브영 기프티콘 1만원권', '40코인', Icons.local_mall),
-              SizedBox(height: 32),
-              Center(child: Text('©LD')),
+              SizedBox(height: 16),
+              Center(
+                child: Text(
+                  '©LD',
+                  style: TextStyle(
+                    color: Color(0xFF808080),
+                    fontFamily: 'PretendardMedium',
+                  ),
+                ),
+              ),
+              SizedBox(height: 30),
             ],
           ),
         ),
@@ -96,25 +120,35 @@ class _MyPageState extends State<MyPage> {
               children: [
                 Text(
                   title,
-                  style: TextStyle(fontWeight: FontWeight.bold),
+                  style: TextStyle(
+                    fontFamily: 'PretendardMedium',
+                  ),
                 ),
                 Text(
                   subtitle,
-                  style: TextStyle(color: Colors.blue),
+                  style: TextStyle(
+                    fontFamily: 'PretendardMedium',
+                    color: Color(0xFF454FAF),
+                  ),
                 ),
                 Text(
                   coin,
-                  style: TextStyle(color: Colors.grey),
+                  style: TextStyle(
+                    fontFamily: 'PyeongChangPeaceLight',
+                    color: Colors.grey,
+                  ),
                 ),
               ],
             ),
           ),
           TextButton(
-            onPressed: () {
-            },
+            onPressed: () {},
             child: Text(
               '구매하기',
-              style: TextStyle(color: Color(0xFF454FAF)), 
+              style: TextStyle(
+                fontFamily: 'PyeongChangPeaceLight',
+                color: Color(0xFF454FAF),
+              ),
             ),
           ),
         ],

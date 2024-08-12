@@ -28,19 +28,19 @@ flutter:
     - family: PyeongChangPeaceLight
       fonts:
         - asset: assets/fonts/pyeongchangpeace/mac/PyeongChangPeace-Light.otf
-    - family: PretendardBold
+    - family: PretendardBold #700
       fonts:
         - asset: assets/fonts/prendard/mac/Pretendard-Bold.otf
         - asset: assets/fonts/prendard/window/Pretendard-Bold.ttf
-    - family: PretendardLight
+    - family: PretendardLight #400
       fonts:
         - asset: assets/fonts/prendard/mac/Pretendard-Light.otf
         - asset: assets/fonts/prendard/window/Pretendard-Light.ttf
-    - family: PretendardMedium
+    - family: PretendardMedium #500
       fonts:
         - asset: assets/fonts/prendard/mac/Pretendard-Medium.otf
         - asset: assets/fonts/prendard/window/Pretendard-Medium.ttf
-    - family: PretendardSemiBold
+    - family: PretendardSemiBold #600
       fonts:
         - asset: assets/fonts/prendard/mac/Pretendard-SemiBold.otf
         - asset: assets/fonts/prendard/window/Pretendard-SemiBold.ttf
