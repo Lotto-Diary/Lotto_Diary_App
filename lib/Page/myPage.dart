@@ -53,7 +53,7 @@ class _MyPageState extends State<MyPage> {
               SizedBox(height: 16),
               // 보유코인 텍스트 및 숫자 수정
               Padding(
-                padding: const EdgeInsets.only(left: 8.0), // 여백 추가
+                padding: const EdgeInsets.only(left: 8.0),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.baseline,
                   textBaseline: TextBaseline.alphabetic,
